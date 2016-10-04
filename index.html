@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
+---
+layout: default
+---
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="google-site-verification" content="m9Bx1JumFXF9_GVkvHT02JOgKsBODO1Gx3NgrKTTcp4" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Matt Cordier">
+<div class="home">
 
+  <h1 class="page-heading">Posts</h1>
 
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <title>Learn To Groove</title>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-  </head>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-  <body>
-  	<h1>Learn To Groove</h1>
-  </body>
-</html>  
+</div>
