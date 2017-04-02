@@ -3,7 +3,7 @@ body,
 .pure-g-r [class *= "pure-u"] {
     /* Add your font in here, whether it's a custom font or a normal font */
     font-family: $sans-serif;
-    letter-spacing: 0;
+    letter-spacing: normal;
 }
 .pure-g > div {
     -webkit-box-sizing: border-box;
@@ -42,7 +42,9 @@ body {
 
 h1 {
 	color: #FFFFFF;
-	font-weight: 900;
+	font-weight: 700;
+	font-size: 2.8125rem;
+	letter-spacing: 2px;
 }
 
 img {	
@@ -51,4 +53,10 @@ img {
     box-sizing: border-box;
 	border: 5px solid rgba(155, 155, 155, .5);
 	margin-top: 1em;
+}
+
+p {
+	font-size: 1.125rem;
+	color: #E13A38;
+	margin-bottom: 0;
 }
