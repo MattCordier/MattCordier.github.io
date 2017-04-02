@@ -1,0 +1,54 @@
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* Add your font in here, whether it's a custom font or a normal font */
+    font-family: $sans-serif;
+    letter-spacing: 0;
+}
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l-box {
+   padding: 1em;
+}   
+
+.contain {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .contain {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contain {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contain {
+    width: 1170px;
+  }
+}
+ 
+body {
+	background-color: #310100;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-weight: 900;
+}
+
+img {	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	border: 5px solid rgba(155, 155, 155, .5);
+	margin-top: 1em;
+}

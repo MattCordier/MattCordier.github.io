@@ -1,3 +1,43 @@
-{% include header.html %}
+<!DOCTYPE html>
+
+<html> 
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href=""/>
+
+ 
+  <!-- FONT AWESOME -->
+  <script src="https://use.fontawesome.com/d7ca3473d5.js"></script>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/base-min.css">
+  
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  
+  <link rel="stylesheet" href="/public/css/main.css" media="all"/>
+
+</head>
+
 	{{ content }}
-{% include footer.html %}
+
+	<!-- JQUEY CDN -->
+<!-- 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+ 
+</body>
+</html>
