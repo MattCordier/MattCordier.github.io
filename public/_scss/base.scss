@@ -37,14 +37,19 @@ body,
 }
  
 body {
-	background-color: #310100;
+	// background-color: #310100;
+  min-height: 4000px;
 }
 
 h1 {
 	color: #FFFFFF;
-	font-weight: 700;
-	font-size: 2.8125rem;
+  font-weight: 700;
+	font-size: 4rem;
 	letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.05;
+
+
 }
 
 img {	
@@ -56,7 +61,8 @@ img {
 }
 
 p {
-	font-size: 1.125rem;
-	color: #E13A38;
+  color: #FFFFFF;
+	font-size: 2rem;
+  text-align: center;
 	margin-bottom: 0;
 }
