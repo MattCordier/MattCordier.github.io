@@ -2,10 +2,12 @@
 # sass
 ---
 
-@import "fonts.scss";
+@import "fonts";
 @import "base.scss";
+@import "home-page";
+@import "about-page";
 
 /*-------------*\ 
    EMAIL FORMS
 \*-------------*/
-@import "goldilocks-leadgen-form.scss"
+@import "goldilocks-leadgen-form.scss";
