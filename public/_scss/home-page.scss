@@ -1,8 +1,38 @@
-.home-page--wrapper {
-	background: black;
-	color: #fff;
+.home-page {
+	background: url('/public/img/snare-diagram.png') no-repeat center left fixed; 
+	  // -webkit-background-size: cover;
+	  // -moz-background-size: cover;
+	  // -o-background-size: cover;
+	  // background-size: cover; 
+	background-color: #3a3a43;
 
-	.home-page__h1 {
+	.home-page--wrapper {
+		color: #fff;
+		
+		.home-page__div--title-wrap {
+			position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+			background-color: rgba(33, 33, 38, .8);
+			padding: 15px 20px;
+			border-radius: 15px;
+			margin: 0 auto;
+			
+			
+			
+			.title__h1 {
+				font-size: 5em;
+				font-weight: 600;
+				margin: 0;
+		 	}
 
+		 	.title__h1 {
+				font-weight: 400;
+
+		 	}
+
+		}
+		
 	}
 }
