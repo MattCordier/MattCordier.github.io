@@ -1,1 +1,37 @@
+@import "variables.scss";
+
+// ------ BASE SETUP ------ //
+
+body {
+  // set what 1em is equal to (default is 16px) and scale
+  // down for screens
+  font-size: 16px;
+
+  @media (max-width: $screen-md-max) { 
+    font-size: 14px;
+  }
+  @media (max-width: $screen-sm-max) { 
+    font-size: 14px;
+  }
+  @media (max-width: $screen-xs-max) { 
+    font-size: 14px;
+  }
+
+  font-family : $sans-serif;
+}
+
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  overflow-y: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+
 
