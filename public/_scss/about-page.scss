@@ -18,15 +18,32 @@
 			background-color: transparent;
 		}
 
+		.about-page__img {
+			margin: 1.5em auto;
+			border-radius: 15px;
+
+			@media (max-width: $screen-sm-max) {
+				margin-top: .5em;
+			}			
+		}
+
 		.about-page__p {
 			font-size: 1.125em;
 			font-weight: 100;
 			line-height: 1.75;
 			text-align: left;
-		}
+
+			@media (max-width: $screen-md-max) {
+				padding: 0 10px;
+			}
+
+			@media (max-width: 425px) {
+				padding: 0;
+			}	
+		}// .about-page__p
 
 		.about-page__p--quote {
-			margin-bottom: 2em;
+			margin-bottom: 1em;
 			font-weight: 100;
 		}
 
@@ -37,7 +54,6 @@
 	    border-top: 2px solid #755d64;
 	    margin: 1em 0;
 	    padding: 0;
-			
 		}
-	}	
-}	
+	}// .about-page--wrapper	
+}// .about-page	
