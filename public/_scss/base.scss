@@ -1,68 +1,33 @@
-body,
-.pure-g [class *= "pure-u"],
-.pure-g-r [class *= "pure-u"] {
-    /* Add your font in here, whether it's a custom font or a normal font */
-    font-family: $sans-serif;
-    letter-spacing: normal;
-}
-.pure-g > div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.l-box {
-   padding: 1em;
-}   
+@import "variables.scss";
 
-.contain {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .contain {
-    width: 750px;
+// ------ BASE SETUP ------ //
+
+body {
+  // set what 1em is equal to (default is 16px) and scale
+  // down for screens
+  font-size: 16px;
+
+  @media (max-width: $screen-md-max) { 
+    font-size: 14px;
   }
-}
-@media (min-width: 992px) {
-  .contain {
-    width: 970px;
+  @media (max-width: $screen-sm-max) { 
+    font-size: 14px;
   }
-}
-@media (min-width: 1200px) {
-  .contain {
-    width: 1170px;
+  @media (max-width: $screen-xs-max) { 
+    font-size: 14px;
   }
+
 }
  
-body {
-	// background-color: #310100;
-  min-height: 4000px;
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  overflow-y: auto;
 }
 
-h1 {
-	color: #FFFFFF;
-  font-weight: 700;
-	font-size: 4rem;
-	letter-spacing: 2px;
-  text-align: center;
-  line-height: 1.05;
-
-
+.nowrap {
+  white-space: nowrap;
 }
 
-img {	
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-	border: 5px solid rgba(155, 155, 155, .5);
-	margin-top: 1em;
-}
-
-p {
-  color: #FFFFFF;
-	font-size: 2rem;
-  text-align: center;
-	margin-bottom: 0;
-}
