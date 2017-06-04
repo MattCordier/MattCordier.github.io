@@ -1,0 +1,49 @@
+<nav class="learn-to-groove-nav  navbar sticky-top navbar-light bg-faded">
+  <div class="primary-nav-wrapper">
+    <div class="container" style="position:relative;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="js-navbar-glyphicon  glyphicon  glyphicon-menu-hamburger"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="js-navbar-text">MENU</span>
+        </button>
+      
+          <!-- need to duplicate this due to navbar collapse stuff -->
+          <div class=" hidden-lg  hidden-md">
+            <a class="navbar-brand" href="/">Matt Cordier</a>
+          </div>
+        <!-- end:duplicate number -->
+      </div><!-- /navbar-header -->
+      
+      <!-- need to duplicate this due to navbar collapse stuff -->
+      <div class="hidden-sm  hidden-xs">
+        <a class="navbar-brand" href="/">Matt Cordier</a>
+      </div>
+      <!-- end:duplicate number -->
+
+      <div id="navbar" class="navbar-collapse  collapse">
+        <ul class="learn-to-groove-nav__link-list  nav  navbar-nav navbar-right">
+          
+          {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+            {% for p in navigation_pages %}
+              {% if p.navigation_weight  %}
+                <li class="primary-link">
+                  <a href="{{ p.url }}" 
+                    {% if p.url ==  page.url %} 
+                      class="a active"
+                      {% else %}
+                        class="a"
+                    {% endif %}>
+                    
+                    {{ p.nav_title }}
+
+                  </a>
+                </li><!-- /primary-link -->
+              {% endif %}
+            {% endfor %}
+
+        </ul><!-- /learn-to-groove-nav__link-list -->
+      </div><!--/#navbar .navbar-collapse -->
+    </div><!-- /container -->
+  </div><!-- /.primary-nav-wrapper -->
+</nav><!-- /learn-to-groove-nav -->
