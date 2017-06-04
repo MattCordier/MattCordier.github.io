@@ -9,15 +9,15 @@
         </button>
       
           <!-- need to duplicate this due to navbar collapse stuff -->
-          <div class="nav-contact-us  hidden-lg  hidden-md">
-            <p class="nav-contact-us__number" ><a href="tel:773-383-8480" style="color: #FFF; text-decoration: none;">773-383-8480</a></p>
+          <div class=" hidden-lg  hidden-md">
+            <a class="navbar-brand" href="/">Matt Cordier</a>
           </div>
         <!-- end:duplicate number -->
       </div><!-- /navbar-header -->
       
       <!-- need to duplicate this due to navbar collapse stuff -->
-      <div class="nav-contact-us  hidden-sm  hidden-xs">
-        <p class="nav-contact-us__number" style="color: #FFF; text-decoration: none;"><a href="tel:773-383-8480" style="color: #FFF; text-decoration: none;">773-383-8480</a></p>
+      <div class="hidden-sm  hidden-xs">
+        <a class="navbar-brand" href="/">Matt Cordier</a>
       </div>
       <!-- end:duplicate number -->
 
@@ -34,8 +34,9 @@
                       {% else %}
                         class="a"
                     {% endif %}>
-
+                    
                     {{ p.nav_title }}
+
                   </a>
                 </li><!-- /primary-link -->
               {% endif %}

@@ -1,0 +1,20 @@
+.media-page {
+	background: url('/public/img/cymbal-stand-diagram.png') no-repeat bottom right fixed; 
+	background-color: #3a3a43;
+
+	.media-container {
+		position:relative;
+		padding-bottom:56.25%;
+		padding-top:30px;
+		height:0;
+		overflow:hidden;
+	}
+
+	.media-container iframe, .media-container object, .media-container embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+}
