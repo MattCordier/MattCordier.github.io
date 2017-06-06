@@ -17,12 +17,12 @@
       
       <!-- need to duplicate this due to navbar collapse stuff -->
       <div class="hidden-sm  hidden-xs">
-        <a class="navbar-brand" href="/">Matt Cordier</a>
+     <!--    <a class="navbar-brand" href="/">Matt Cordier</a> -->
       </div>
       <!-- end:duplicate number -->
 
       <div id="navbar" class="navbar-collapse  collapse">
-        <ul class="learn-to-groove-nav__link-list  nav  navbar-nav navbar-right">
+        <ul class="learn-to-groove-nav__link-list  nav  navbar-nav">
           
           {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
             {% for p in navigation_pages %}
