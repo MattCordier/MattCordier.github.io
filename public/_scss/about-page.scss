@@ -19,7 +19,7 @@
 		}
 
 		.about-page__img {
-			margin: 1.5em auto;
+			margin: .5em auto 1.5em;
 			border-radius: 15px;
 
 			@media (max-width: $screen-sm-max) {
@@ -30,7 +30,7 @@
 		.about-page__p {
 			font-size: 1.125em;
 			font-weight: 100;
-			line-height: 1.75;
+			line-height: 1.5;
 			text-align: left;
 
 			@media (max-width: $screen-md-max) {
