@@ -7,6 +7,10 @@
 		background-size: cover;
 		padding: 3em 1em;
 		margin-bottom: 4em;
+
+		@media (max-width: $screen-xs-max) {
+			padding: 2em .15em;
+		}
 	}
 
 	.free-lesson__row {
@@ -29,6 +33,13 @@
 		margin-left: 50px;
 		margin-bottom: 20px;
 		
+		@media (max-width: $screen-md-max) {
+			margin-left: 20px;
+		}
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+			margin-left: 0;
+		}
 	}
 
 	.free-lesson__p--limited {
@@ -37,10 +48,21 @@
 		font-weight: 500;
 		font-style: italic;
 		margin-left: 50px;
+
+		@media (max-width: $screen-md-max) {
+			margin-left: 20px;
+		}
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+			margin-left: 0;
+		}
 	}
 
 	.free-lesson-form__div {
 		max-width: 395px;
+		@media (max-width: $screen-sm-max) {
+			margin: 1em auto;
+		}
 	}
 
 	.form-control {
@@ -58,15 +80,33 @@
 		border: 0px;
 		border-radius: 5px;
 		margin-top: .5em;
+
+		&:hover {
+			background-color: darken(#e63933, 10%);
+		}
 	}
 
 	.three-steps {
 		padding-bottom: 30px;
 		margin-bottom: 4em;
+
+		@media (max-width: $screen-xs-max) {
+			margin-bottom: 1em;
+		}
+	}
+
+	.three-steps__h2 {
+		font-weight: 700;
+		margin-bottom: 3em;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.5em;
+		}
 	}
 
 	.three-steps__h2--testimony {
 		font-weight: 700;
+		margin-top: 3em;
 	}
 
 	.three-steps__p--testimony {
@@ -97,6 +137,10 @@
 	.your-session {
 		background-color: #F2F4F5;
 		padding: 60px 0;
+
+		@media (max-width: $screen-xs-max) {
+			padding: 15px 0;
+		}
 	}
 
 	.your-session__div--card {
@@ -109,21 +153,39 @@
 		@media (max-width: $screen-sm-max) {
 			padding: 40px 20px;
 		}
+		@media (max-width: $screen-xs-max) {
+			padding: 20px 10px;
+		}
 	}
 
 	.your-session__img {
+		width: 450px;
 		border-radius: 10px;
 		margin-top: 2em;
 		margin-bottom: 5px;
 
 		@media (max-width: $screen-sm-max) {
-			margin: 2em auto 5px;
+			margin: 2em auto 10px;
+		}
+
+		@media (max-width: 424px) {
+			width: 100%;
+			height: auto;
+		}
+		&.profile {
+			margin-top: 0;
 		}
 	}
 
 	.your-session__caption {
 		font-size: 1em;
 		font-weight: 500;
+
+		&.profile {
+			@media (max-width: $screen-sm-max) {
+				margin-bottom: 2em;
+			}
+		}
 	}
 
 	.your-session__row--steps {
