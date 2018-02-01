@@ -1,0 +1,146 @@
+.free-lesson-feb {
+	color: #203754;
+	.free-lesson-hero {
+    background: #2f0e15;
+		background-image:url('../img/free-lesson/free-lesson-bg.jpg') no-repeat center center;
+		background:url('../img/free-lesson/free-lesson-bg.jpg') no-repeat center center, linear-gradient(to right, #2f0e15 1%, #203754 100%);
+		background-size: cover;
+		padding: 3em 1em;
+		margin-bottom: 4em;
+	}
+
+	.free-lesson__row {
+		background-color: rgba(0, 0, 0, .7 );
+		color: #FFF;
+		padding: .5em;
+		border: 2px solid #203756;
+		border-radius: 10px;
+		padding: 40px 20px;
+		margin: .5em 0 .25em;
+	}
+
+	.free-lesson__h1 {
+		// display: inline-block;
+		// text-align: center;
+		
+		font-size: 2.5em;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-left: 50px;
+		margin-bottom: 20px;
+		
+	}
+
+	.free-lesson__p--limited {
+		color: #ffd000;
+		font-size: 1.125em;
+		font-weight: 500;
+		font-style: italic;
+		margin-left: 50px;
+	}
+
+	.free-lesson-form__div {
+		max-width: 395px;
+	}
+
+	.form-control {
+		font-size: 1.125em;
+		height: 45px;
+	}
+
+	.free-lesson__btn {
+		background-color: #e63933;
+		font-size: 1.25em;
+		font-weight: 700;
+		padding: 10px 20px;
+		border: 0px;
+		margin-top: 1em;
+	}
+
+	.three-steps {
+		margin-bottom: 4em;
+	}
+
+	.three-steps__p--title {
+		text-align: center;
+		color: #e63933;
+		font-size: 1.125em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.three-steps__p--detail {
+		text-align: center;
+	} 
+
+	.your-session {
+		background-color: #F2F4F5;
+	}
+
+	.your-session__div--card {
+		background-color: #FFF;
+		border-radius: 10px;
+		padding: 40px 60px;
+		margin: 4em auto;
+		box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+		@media (max-width: $screen-sm-max) {
+			padding: 40px 20px;
+		}
+	}
+
+	.your-session__img {
+		border-radius: 10px;
+		margin-top: 2em;
+		margin-bottom: 5px;
+
+		@media (max-width: $screen-sm-max) {
+			margin: 2em auto 5px;
+		}
+	}
+
+	.your-session__caption {
+		font-size: 1em;
+		font-weight: 500;
+	}
+
+	.your-session__row--steps {
+		background-color: #F2F4F5;
+		margin-bottom: 40px;
+		border-radius: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+			background-color: transparent;
+		}
+	}
+
+	.your-session__img--steps {
+		max-width: 125px;
+		border: 1px solid #e63933;
+		border-radius: 10px;
+		margin: 1em auto;
+	}
+
+	.your-session__h2 {
+		font-size: 2.25em;
+		font-weight: 700;
+		font-style: italic;
+		margin-bottom: 25px;
+	}
+
+	.your-session__p {
+		margin-bottom: 1.25em;
+		&:last-of-type {
+			margin-bottom: 40px;
+		}
+	}
+
+	.steps__h2 {
+		margin-top: 1em;
+		font-size: 1.5em;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+	}
+}//.free-lesson-feb
