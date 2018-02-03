@@ -7,7 +7,7 @@ $('.js-lesson-form').find('button:submit').on('click', function(e){
 
   $.ajax({
     method: 'POST',
-    url: 'https://formsp.io/matt@learntogroove.com', 
+    url: 'https://formspree.io/matt@learntogroove.com', 
     data: contact,
     dataType: 'json',
     success: function (){
