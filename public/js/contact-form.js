@@ -2,7 +2,7 @@ $('.js-lesson-form').find('button:submit').on('click', function(e){
   e.preventDefault();
 
   let contact = {};
-  contact.name = $('#name').val();
+  contact.name = $('#name').val(); 
   contact.email = $('#email').val();
 
   $.ajax({
