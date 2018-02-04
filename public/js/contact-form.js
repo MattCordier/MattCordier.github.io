@@ -11,7 +11,7 @@ $('.js-lesson-form').find('button:submit').on('click', function(e){
     data: contact,
     dataType: 'json',
     success: function (){
-      window.location.assign('https://learntogroove/free-lesson-thank-you.html')
+      window.location.assign('https://learntogroove.com/free-lesson-thank-you.html')
     },
     error: function (){
       $('.free-lesson__p--limited').replaceWith( '<p class="free-lesson__p--error">There was an error submitting your form. <br>Please refresh the page and try again. <br>Or contact us directly: matt@learntogroove.com</p>' );
