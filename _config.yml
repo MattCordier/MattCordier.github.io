@@ -15,3 +15,5 @@ sass:
 # Build settings
 markdown: kramdown
 theme: minima
+gems:
+  - octopress-autoprefixer
