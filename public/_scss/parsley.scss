@@ -1,0 +1,21 @@
+.parsley-error {
+	background-color: lighten(#cc0000, 50%);
+}
+
+.parsley-success {
+	border: 2px solid #00AB4F;
+	box-shadow: inset 0 1px 1px rgba(0, 171, 79, .5);
+}
+
+ul.parsley-errors-list {
+	list-style-type: none;
+	list-style: none;
+}
+.parsley-required {
+	display: block;
+	background-color: #FFF;
+	color: #cc0000;
+	padding: 5px;
+	border-radius: 5px;
+	margin-left: -40px;
+}
