@@ -4,18 +4,18 @@ $(function () {
   $('.js-lesson-form').find('button:submit').on('click', function(e){
     e.preventDefault();
 
-    let contact = {
+    var contact = {
       name  : $('#name').val(), 
       email : $('#email').val()
     };
 
-    let $form = $(this).parents('.js-lesson-form');
-    let parsley = $form.parsley();
-    let isValidated = parsley.validate();
+    var $form = $(this).parents('.js-lesson-form');
+    var parsley = $form.parsley();
+    var isValidated = parsley.validate();
 
     if (isValidated) {
-      let cachedBtnText = $(this).text();
-      let $self = $(this);
+      var cachedBtnText = $(this).text();
+      var $self = $(this);
 
       $(this).prop('disabled', true);
 
