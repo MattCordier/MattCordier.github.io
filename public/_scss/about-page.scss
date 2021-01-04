@@ -1,59 +1,180 @@
-.about-page {
-	background: url('/public/img/bass-drum-diagram.png') no-repeat bottom right fixed; 
-	background-color: #3a3a43;
+/*----- Your Coach ------*/
+.about {
+	background-color: #F2F4F5;
+	padding: 20px 0 60px;
 
 	@media (max-width: $screen-xs-max) {
-		background-image: none;
+		padding: 15px 0;
+	}
+}
+
+.about__div--card {
+	background-color: rgba(355,355,355,0.7);
+	border-radius: 10px;
+	padding:0px;
+	margin: 4em auto;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+	@media (max-width: $screen-sm-max) {
+		padding: 40px 20px;
+	}
+	@media (max-width: $screen-xs-max) {
+		max-width: 600px;
+		padding: 0 0 20px;
+	}
+}
+
+.about__img {
+	width: 600px;
+	border-radius: 0px 10px 10px 0px;
+
+	@media (max-width: $screen-sm-max) {
+		border-radius: 10px;
+		margin: 2em auto 10px;
+	}
+	@media (max-width: $screen-xs-max) {
+		border-radius: 10px 10px 0px 0px;
+		margin-top: 0;
 	}
 
-	.about-page--wrapper {
-		color: #fff;
-		text-align: center;
-		background-color: rgba(33, 33, 38, .8);
-		padding: 15px 20px;
-		border-radius: 15px;	
-		margin: 0 auto 5em;
+	@media (max-width: 424px) {
+		width: 100%;
+		height: auto;
+	}
+}//.about__img
 
-		@media (max-width: $screen-xs-max) {
-			background-color: transparent;
+.about__caption {
+	font-size: 1em;
+	font-weight: 500;
+
+	&.profile {
+		@media (max-width: $screen-sm-max) {
+			margin-bottom: 2em;
 		}
+	}
+}
 
-		.about-page__img {
-			margin: .5em auto 1.5em;
-			border-radius: 15px;
+.about__row--steps {
+	background-color: #F2F4F5;
+	margin-bottom: 40px;
+	border-radius: 10px;
 
-			@media (max-width: $screen-sm-max) {
-				margin-top: .5em;
-			}			
-		}
+	&:last-of-type {
+		margin-bottom: 0;
+		background-color: transparent;
+	}
+}
 
-		.about-page__p {
-			font-size: 1.125em;
-			font-weight: 100;
-			line-height: 1.5;
-			text-align: left;
+.about__img--steps {
+	max-width: 125px;
+	border: 1px solid #e63933;
+	border-radius: 10px;
+	margin: 1em auto;
+}
 
-			@media (max-width: $screen-md-max) {
-				padding: 0 10px;
-			}
+.about__div--info {
+	padding: 0 10px 0 40px;
 
-			@media (max-width: 425px) {
-				padding: 0;
-			}	
-		}// .about-page__p
+	@media (max-width: $screen-xs-max) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
 
-		.about-page__p--quote {
-			margin-bottom: 1em;
-			font-weight: 100;
-		}
+.about__h2 {
+	font-size: 2.25em;
+	font-weight: 700;
+	margin-top: 1rem;
+	margin-bottom: 0;
 
-		hr {
-			display: block;
-	    height: 1px;
-	    border: 0;
-	    border-top: 2px solid #755d64;
-	    margin: 1em 0;
-	    padding: 0;
-		}
-	}// .about-page--wrapper	
-}// .about-page	
+	@media (max-width: $screen-md-max) {
+		margin-top: .75rem;
+	}
+}
+
+.about__p {
+	font-size: 1em;
+	font-weight: 500;
+	margin-bottom: 1.25rem;
+	line-height: 1.5;
+}
+
+.about__p--title {
+	font-size: 1.25em;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.steps__h2 {
+	margin-top: 1em;
+	font-size: 1.5em;
+font-weight: 900;
+font-style: italic;
+text-transform: uppercase;
+}
+
+.about__p--signature {
+	font-size: 3em;
+	font-weight: 700;
+	font-style: italic;
+}
+
+// .about-page {
+// 	background: url('/public/img/bass-drum-diagram.png') no-repeat bottom right fixed; 
+// 	background-color: #3a3a43;
+
+// 	@media (max-width: $screen-xs-max) {
+// 		background-image: none;
+// 	}
+
+// 	.about-page--wrapper {
+// 		color: #fff;
+// 		text-align: center;
+// 		background-color: rgba(33, 33, 38, .8);
+// 		padding: 15px 20px;
+// 		border-radius: 15px;	
+// 		margin: 0 auto 5em;
+
+// 		@media (max-width: $screen-xs-max) {
+// 			background-color: transparent;
+// 		}
+
+// 		.about-page__img {
+// 			margin: .5em auto 1.5em;
+// 			border-radius: 15px;
+
+// 			@media (max-width: $screen-sm-max) {
+// 				margin-top: .5em;
+// 			}			
+// 		}
+
+// 		.about-page__p {
+// 			font-size: 1.125em;
+// 			font-weight: 100;
+// 			line-height: 1.5;
+// 			text-align: left;
+
+// 			@media (max-width: $screen-md-max) {
+// 				padding: 0 10px;
+// 			}
+
+// 			@media (max-width: 425px) {
+// 				padding: 0;
+// 			}	
+// 		}// .about-page__p
+
+// 		.about-page__p--quote {
+// 			margin-bottom: 1em;
+// 			font-weight: 100;
+// 		}
+
+// 		hr {
+// 			display: block;
+// 	    height: 1px;
+// 	    border: 0;
+// 	    border-top: 2px solid #755d64;
+// 	    margin: 1em 0;
+// 	    padding: 0;
+// 		}
+// 	}// .about-page--wrapper	
+// }// .about-page	

@@ -1,6 +1,5 @@
 .media-page {
 	background: url('/public/img/cymbal-stand-diagram.png') no-repeat bottom right fixed; 
-	background-color: #3a3a43;
 
 	@media (max-width: $screen-xs-max) {
 		background-image: none;
@@ -9,14 +8,10 @@
 	.media-page--wrapper {
 
 		color: #fff;
-		background-color: rgba(33, 33, 38, .8);
+		background-color: rgba(32, 55, 84, .9);
 		padding: 15px 20px;
 		border-radius: 15px;	
 		margin: 0 auto 5em;
-
-		@media (max-width: $screen-xs-max) {
-			background-color: transparent;
-		}
 
 		.media-container {
 			text-align: center;
@@ -28,6 +23,10 @@
 			border-radius: 10px;
 			border: 1px solid #755d64;
 			margin: 2em;
+
+			@media (max-width: $screen-xs-max) {
+				margin: 0 0 3rem;
+			}
 
 		}// .media-container
 
@@ -44,7 +43,11 @@
 		.media__p {
 			text-align: center;
 			font-size: 1.5em;
-			margin-top: 1em;
+			margin-top: 2em;
+
+			@media (max-width: $screen-sm-max) {
+				margin-top: 1rem;
+			}
 		}
 	}// .media-page--wrapper
 }// .media-page
