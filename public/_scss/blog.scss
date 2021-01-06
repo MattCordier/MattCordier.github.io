@@ -1,0 +1,34 @@
+.blog__ul {
+    list-style: none;
+    padding: 0;
+}
+.blog__div--card {
+    max-width: 500px;
+    margin: 0 auto 4rem;
+    border-radius: 10px;
+    padding: 35px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+}
+
+.blog__img--featured {
+    margin-bottom: 2rem;
+}
+
+.blog__h2 {
+   margin-top: 0;
+
+   .blog__a {
+       color: #203754;
+   }
+}
+
+/* Post Styles */
+.blog__div--post-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
