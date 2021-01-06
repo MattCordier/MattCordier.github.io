@@ -4,17 +4,39 @@ title: home-page
 nav_title: Home
 navigation_weight: 1
 ---
-<div class="container-fluid home-page--wrapper">
-	<div class="container">	
-	  <div class="row">
-	    <div class="col-xs-12 text-center">
-	    	<div class="home-page__div--title-wrap">
-		      <h1 class="title__h1">Matt Cordier</h1>
-		      <p class="title__p text-center">Performance | Education </p>
-	      	<a href="{{ site.baseurl }}/about.html" class="title__p">enter site</a>
-	      	<div id="player"></div>
-	      </div>
-	    </div>
-	  </div><!-- /row -->
-	</div><!-- /container -->
-</div><!-- /container-fluid -->
+
+<div class="home-page"> 
+	<section class="home-page-hero">
+		<div class="home-page__div">
+			<h1 class="home-page__h1">Learn To Groove</h1>
+			<p class="home-page__p--process">A simple blog for creative people 
+			</p>
+		</div><!-- /home-page__div -->
+	</section><!-- /home-page-hero -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+
+				<ul class="blog__ul">
+					{% for post in site.posts %}
+					<a class="blog__a" href="{{ post.url }}">
+						<div class="blog__div--card">
+							<li class="blog__li">
+								<img src="{{ site.baseurl }}public/img/blog-feature/{{ post.featuredImg }}" 
+								alt="{{post.featuredImgAlt }}"
+								class="img-responsive blog__img--featured" />
+								
+								<span>{{ post.subtitle }}&mdash;{{ post.date | date: "%b %d, %y"  }}</span>
+								
+								<h2 class="blog__h2">{{ post.title }}</a></h2>
+								
+								<span class="blog__span--excerpt">{{ post.excerpt | truncate: 100 }}</span>
+							</li>
+						</div>
+					</a>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div><!-- /home-page -->
