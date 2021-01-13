@@ -6,7 +6,6 @@
     max-width: 500px;
     margin: 0 auto 4rem;
     border-radius: 10px;
-    padding: 35px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 
     &:hover {
@@ -19,16 +18,21 @@
     margin-bottom: 2rem;
 }
 
+.blog__a {
+    color: #203754;
+    display: inline-block;
+    padding: 35px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .blog__h2 {
    margin-top: 0;
-
-   .blog__a {
-       color: #203754;
-   }
 }
 
 /* Post Styles */
 .blog__div--post-wrapper {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
 }

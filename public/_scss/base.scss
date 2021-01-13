@@ -39,6 +39,8 @@ audio {
 }
 
 .learn-to-groove-nav.navbar {
+  border-radius: 0;
+  border-bottom: 1px solid #e63933;
   margin-bottom: 0;
 }
 
@@ -100,4 +102,12 @@ audio {
     font-size: 1.25em;
     margin: 0 5px;
   }
+  
+  .footer__a--social {
+    color: #FFF;
+
+    &:hover {
+      color: #e63933;
+    }
+  } 
 }

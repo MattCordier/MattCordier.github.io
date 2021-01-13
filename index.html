@@ -9,31 +9,32 @@ navigation_weight: 1
 	<section class="home-page-hero">
 		<div class="home-page__div">
 			<h1 class="home-page__h1">Learn To Groove</h1>
-			<p class="home-page__p--process">A simple blog for creative people 
+			<p class="home-page__p--process">A simple blog for creative people balancing work, relationships, and <span class="text-nowrap">artful living</span>
 			</p>
 		</div><!-- /home-page__div -->
 	</section><!-- /home-page-hero -->
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-
 				<ul class="blog__ul">
 					{% for post in site.posts %}
-					<a class="blog__a" href="{{ post.url }}">
 						<div class="blog__div--card">
-							<li class="blog__li">
-								<img src="{{ site.baseurl }}public/img/blog-feature/{{ post.featuredImg }}" 
-								alt="{{post.featuredImgAlt }}"
-								class="img-responsive blog__img--featured" />
-								
-								<span>{{ post.subtitle }}&mdash;{{ post.date | date: "%b %d, %y"  }}</span>
-								
-								<h2 class="blog__h2">{{ post.title }}</a></h2>
-								
-								<span class="blog__span--excerpt">{{ post.excerpt | truncate: 100 }}</span>
-							</li>
+							<a class="blog__a" href="{{ post.url }}">
+								<li class="blog__li">
+									<img src="{{ site.baseurl }}public/img/blog-feature/{{ post.featuredImg }}" 
+									alt="{{post.featuredImgAlt }}"
+									class="img-responsive blog__img--featured" />
+									
+									<span>{{ post.subtitle }}&mdash;{{ post.date | date: "%b %d, %y"  }}</span>
+									
+									<h2 class="blog__h2">{{ post.title }}</h2>
+									
+									<span class="blog__span--excerpt">{{ post.excerpt | truncate: 250 }}</span>
+
+									<p>Continue Reading...</p>
+								</li>
+							</a>
 						</div>
-					</a>
 					{% endfor %}
 				</ul>
 			</div>
