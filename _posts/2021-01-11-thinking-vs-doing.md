@@ -49,7 +49,7 @@ Simple, right?
 
 That could look like "Mon 12pm, 5 minutes" or "Sat 10am, 1 hour."
 
-Then be sure to put that note in a place where you will see it the next morning. The act of writing it down is the "ace up your sleeve" and soldifies your intention. You have already taken action towards your goal and are more likely to honor that commitment your made to yourself.
+Then be sure to put that note in a place where you will see it the next morning. The act of writing it down is the "ace up your sleeve" and solidifies your intention. You have already taken action towards your goal and are more likely to honor that commitment your made to yourself.
 
 ### #3 Plan a Sprint
 
@@ -97,4 +97,4 @@ Remember, thinking and saying does not equal doing.
 
 If you're having trouble getting started, try the 5 Minute Rule. If you aren't showing up consistently, apply the Ace of Practice. When you have a complex project, break it down into smaller tasks, pick a few related tasks, and focus exclusively on them for the next two weeks. Use a tool like Trello to help you store ideas and track your progress.
 
-Try these tehniques out for a month or two and let me know how it goes. Hopefully you'll find yourself energized, organized, and actively pursuing the things you've been dreaming about for years.  
+Try these techniques out for a month or two and let me know how it goes. Hopefully you'll find yourself energized, organized, and actively pursuing the things you've been dreaming about for years.  
